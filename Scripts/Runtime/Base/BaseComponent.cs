@@ -6,9 +6,7 @@
 //------------------------------------------------------------
 
 using GameFramework;
-#if GF_Localization
 using GameFramework.Localization;
-#endif
 using GameFramework.Resource;
 using System;
 using UnityEngine;
@@ -28,10 +26,9 @@ namespace UnityGameFramework.Runtime
 
         [SerializeField]
         private bool m_EditorResourceMode = true;
-#if GF_Localization
+
         [SerializeField]
         private Language m_EditorLanguage = Language.Unspecified;
-#endif
 
         [SerializeField]
         private string m_VersionHelperTypeName = "UnityGameFramework.Runtime.DefaultVersionHelper";
@@ -71,7 +68,7 @@ namespace UnityGameFramework.Runtime
                 m_EditorResourceMode = value;
             }
         }
-#if GF_Localization
+
         /// <summary>
         /// 获取或设置编辑器语言（仅编辑器内有效）。
         /// </summary>
@@ -86,7 +83,7 @@ namespace UnityGameFramework.Runtime
                 m_EditorLanguage = value;
             }
         }
-#endif
+
         /// <summary>
         /// 获取或设置编辑器资源辅助器。
         /// </summary>
