@@ -7657,6 +7657,14 @@
             <param name="length">要读取片段的长度。</param>
             <returns>存储读取文件片段内容的二进制流。</returns>
         </member>
+        <member name="M:GameFramework.FileSystem.FileSystem.ReadFileSegment(System.String,System.Byte[])">
+            <summary>
+            读取指定文件的指定片段。
+            </summary>
+            <param name="name">要读取片段的文件名称。</param>
+            <param name="buffer">存储读取文件片段内容的二进制流。</param>
+            <returns>实际读取了多少字节。</returns>
+        </member>
         <member name="M:GameFramework.FileSystem.FileSystem.ReadFileSegment(System.String,System.Byte[],System.Int32)">
             <summary>
             读取指定文件的指定片段。
@@ -7674,6 +7682,15 @@
             <param name="buffer">存储读取文件片段内容的二进制流。</param>
             <param name="startIndex">存储读取文件片段内容的二进制流的起始位置。</param>
             <param name="length">要读取片段的长度。</param>
+            <returns>实际读取了多少字节。</returns>
+        </member>
+        <member name="M:GameFramework.FileSystem.FileSystem.ReadFileSegment(System.String,System.Int32,System.Byte[])">
+            <summary>
+            读取指定文件的指定片段。
+            </summary>
+            <param name="name">要读取片段的文件名称。</param>
+            <param name="offset">要读取片段的偏移。</param>
+            <param name="buffer">存储读取文件片段内容的二进制流。</param>
             <returns>实际读取了多少字节。</returns>
         </member>
         <member name="M:GameFramework.FileSystem.FileSystem.ReadFileSegment(System.String,System.Int32,System.Byte[],System.Int32)">
@@ -8103,6 +8120,14 @@
             <param name="length">要读取片段的长度。</param>
             <returns>存储读取文件片段内容的二进制流。</returns>
         </member>
+        <member name="M:GameFramework.FileSystem.IFileSystem.ReadFileSegment(System.String,System.Byte[])">
+            <summary>
+            读取指定文件的指定片段。
+            </summary>
+            <param name="name">要读取片段的文件名称。</param>
+            <param name="buffer">存储读取文件片段内容的二进制流。</param>
+            <returns>实际读取了多少字节。</returns>
+        </member>
         <member name="M:GameFramework.FileSystem.IFileSystem.ReadFileSegment(System.String,System.Byte[],System.Int32)">
             <summary>
             读取指定文件的指定片段。
@@ -8120,6 +8145,15 @@
             <param name="buffer">存储读取文件片段内容的二进制流。</param>
             <param name="startIndex">存储读取文件片段内容的二进制流的起始位置。</param>
             <param name="length">要读取片段的长度。</param>
+            <returns>实际读取了多少字节。</returns>
+        </member>
+        <member name="M:GameFramework.FileSystem.IFileSystem.ReadFileSegment(System.String,System.Int32,System.Byte[])">
+            <summary>
+            读取指定文件的指定片段。
+            </summary>
+            <param name="name">要读取片段的文件名称。</param>
+            <param name="offset">要读取片段的偏移。</param>
+            <param name="buffer">存储读取文件片段内容的二进制流。</param>
             <returns>实际读取了多少字节。</returns>
         </member>
         <member name="M:GameFramework.FileSystem.IFileSystem.ReadFileSegment(System.String,System.Int32,System.Byte[],System.Int32)">
@@ -13687,6 +13721,14 @@
             <param name="length">要加载片段的长度。</param>
             <returns>存储加载二进制资源片段内容的二进制流。</returns>
         </member>
+        <member name="M:GameFramework.Resource.IResourceManager.LoadBinarySegmentFromFileSystem(System.String,System.Byte[])">
+            <summary>
+            从文件系统中加载二进制资源的片段。
+            </summary>
+            <param name="binaryAssetName">要加载片段的二进制资源的名称。</param>
+            <param name="buffer">存储加载二进制资源片段内容的二进制流。</param>
+            <returns>实际加载了多少字节。</returns>
+        </member>
         <member name="M:GameFramework.Resource.IResourceManager.LoadBinarySegmentFromFileSystem(System.String,System.Byte[],System.Int32)">
             <summary>
             从文件系统中加载二进制资源的片段。
@@ -13704,6 +13746,15 @@
             <param name="buffer">存储加载二进制资源片段内容的二进制流。</param>
             <param name="startIndex">存储加载二进制资源片段内容的二进制流的起始位置。</param>
             <param name="length">要加载片段的长度。</param>
+            <returns>实际加载了多少字节。</returns>
+        </member>
+        <member name="M:GameFramework.Resource.IResourceManager.LoadBinarySegmentFromFileSystem(System.String,System.Int32,System.Byte[])">
+            <summary>
+            从文件系统中加载二进制资源的片段。
+            </summary>
+            <param name="binaryAssetName">要加载片段的二进制资源的名称。</param>
+            <param name="offset">要加载片段的偏移。</param>
+            <param name="buffer">存储加载二进制资源片段内容的二进制流。</param>
             <returns>实际加载了多少字节。</returns>
         </member>
         <member name="M:GameFramework.Resource.IResourceManager.LoadBinarySegmentFromFileSystem(System.String,System.Int32,System.Byte[],System.Int32)">
@@ -15322,6 +15373,14 @@
             <param name="length">要加载片段的长度。</param>
             <returns>存储加载二进制资源片段内容的二进制流。</returns>
         </member>
+        <member name="M:GameFramework.Resource.ResourceManager.LoadBinarySegmentFromFileSystem(System.String,System.Byte[])">
+            <summary>
+            从文件系统中加载二进制资源的片段。
+            </summary>
+            <param name="binaryAssetName">要加载片段的二进制资源的名称。</param>
+            <param name="buffer">存储加载二进制资源片段内容的二进制流。</param>
+            <returns>实际加载了多少字节。</returns>
+        </member>
         <member name="M:GameFramework.Resource.ResourceManager.LoadBinarySegmentFromFileSystem(System.String,System.Byte[],System.Int32)">
             <summary>
             从文件系统中加载二进制资源的片段。
@@ -15339,6 +15398,15 @@
             <param name="buffer">存储加载二进制资源片段内容的二进制流。</param>
             <param name="startIndex">存储加载二进制资源片段内容的二进制流的起始位置。</param>
             <param name="length">要加载片段的长度。</param>
+            <returns>实际加载了多少字节。</returns>
+        </member>
+        <member name="M:GameFramework.Resource.ResourceManager.LoadBinarySegmentFromFileSystem(System.String,System.Int32,System.Byte[])">
+            <summary>
+            从文件系统中加载二进制资源的片段。
+            </summary>
+            <param name="binaryAssetName">要加载片段的二进制资源的名称。</param>
+            <param name="offset">要加载片段的偏移。</param>
+            <param name="buffer">存储加载二进制资源片段内容的二进制流。</param>
             <returns>实际加载了多少字节。</returns>
         </member>
         <member name="M:GameFramework.Resource.ResourceManager.LoadBinarySegmentFromFileSystem(System.String,System.Int32,System.Byte[],System.Int32)">
@@ -21732,26 +21800,88 @@
         </member>
         <member name="M:GameFramework.Utility.Converter.GetBytes(System.String)">
             <summary>
-            以字节数组的形式获取指定的 UTF-8 字符串。
+            以字节数组的形式获取 UTF-8 编码的字符串。
             </summary>
             <param name="value">要转换的字符串。</param>
             <returns>用于存放结果的字节数组。</returns>
         </member>
+        <member name="M:GameFramework.Utility.Converter.GetBytes(System.String,System.Byte[])">
+            <summary>
+            以字节数组的形式获取 UTF-8 编码的字符串。
+            </summary>
+            <param name="value">要转换的字符串。</param>
+            <param name="buffer">用于存放结果的字节数组。</param>
+            <returns>buffer 内实际填充了多少字节。</returns>
+        </member>
+        <member name="M:GameFramework.Utility.Converter.GetBytes(System.String,System.Byte[],System.Int32)">
+            <summary>
+            以字节数组的形式获取 UTF-8 编码的字符串。
+            </summary>
+            <param name="value">要转换的字符串。</param>
+            <param name="buffer">用于存放结果的字节数组。</param>
+            <param name="startIndex">buffer 内的起始位置。</param>
+            <returns>buffer 内实际填充了多少字节。</returns>
+        </member>
+        <member name="M:GameFramework.Utility.Converter.GetBytes(System.String,System.Text.Encoding)">
+            <summary>
+            以字节数组的形式获取指定编码的字符串。
+            </summary>
+            <param name="value">要转换的字符串。</param>
+            <param name="encoding">要使用的编码。</param>
+            <returns>用于存放结果的字节数组。</returns>
+        </member>
+        <member name="M:GameFramework.Utility.Converter.GetBytes(System.String,System.Text.Encoding,System.Byte[])">
+            <summary>
+            以字节数组的形式获取指定编码的字符串。
+            </summary>
+            <param name="value">要转换的字符串。</param>
+            <param name="encoding">要使用的编码。</param>
+            <param name="buffer">用于存放结果的字节数组。</param>
+            <returns>buffer 内实际填充了多少字节。</returns>
+        </member>
+        <member name="M:GameFramework.Utility.Converter.GetBytes(System.String,System.Text.Encoding,System.Byte[],System.Int32)">
+            <summary>
+            以字节数组的形式获取指定编码的字符串。
+            </summary>
+            <param name="value">要转换的字符串。</param>
+            <param name="encoding">要使用的编码。</param>
+            <param name="buffer">用于存放结果的字节数组。</param>
+            <param name="startIndex">buffer 内的起始位置。</param>
+            <returns>buffer 内实际填充了多少字节。</returns>
+        </member>
         <member name="M:GameFramework.Utility.Converter.GetString(System.Byte[])">
             <summary>
-            返回由字节数组转换来的 UTF-8 字符串。
+            返回由字节数组使用 UTF-8 编码转换成的字符串。
             </summary>
             <param name="value">字节数组。</param>
-            <returns>UTF-8 字符串。</returns>
+            <returns>转换后的字符串。</returns>
+        </member>
+        <member name="M:GameFramework.Utility.Converter.GetString(System.Byte[],System.Text.Encoding)">
+            <summary>
+            返回由字节数组使用指定编码转换成的字符串。
+            </summary>
+            <param name="value">字节数组。</param>
+            <param name="encoding">要使用的编码。</param>
+            <returns>转换后的字符串。</returns>
         </member>
         <member name="M:GameFramework.Utility.Converter.GetString(System.Byte[],System.Int32,System.Int32)">
             <summary>
-            返回由字节数组转换来的 UTF-8 字符串。
+            返回由字节数组使用 UTF-8 编码转换成的字符串。
             </summary>
             <param name="value">字节数组。</param>
             <param name="startIndex">value 内的起始位置。</param>
             <param name="length">长度。</param>
-            <returns>UTF-8 字符串。</returns>
+            <returns>转换后的字符串。</returns>
+        </member>
+        <member name="M:GameFramework.Utility.Converter.GetString(System.Byte[],System.Int32,System.Int32,System.Text.Encoding)">
+            <summary>
+            返回由字节数组使用指定编码转换成的字符串。
+            </summary>
+            <param name="value">字节数组。</param>
+            <param name="startIndex">value 内的起始位置。</param>
+            <param name="length">长度。</param>
+            <param name="encoding">要使用的编码。</param>
+            <returns>转换后的字符串。</returns>
         </member>
         <member name="T:GameFramework.Utility.Encryption">
             <summary>
@@ -21825,13 +21955,6 @@
             <param name="obj">要序列化的对象。</param>
             <returns>序列化后的 JSON 字符串。</returns>
         </member>
-        <member name="M:GameFramework.Utility.Json.ToJsonData(System.Object)">
-            <summary>
-            将对象序列化为 JSON 流。
-            </summary>
-            <param name="obj">要序列化的对象。</param>
-            <returns>序列化后的 JSON 流。</returns>
-        </member>
         <member name="M:GameFramework.Utility.Json.ToObject``1(System.String)">
             <summary>
             将 JSON 字符串反序列化为对象。
@@ -21846,22 +21969,6 @@
             </summary>
             <param name="objectType">对象类型。</param>
             <param name="json">要反序列化的 JSON 字符串。</param>
-            <returns>反序列化后的对象。</returns>
-        </member>
-        <member name="M:GameFramework.Utility.Json.ToObject``1(System.Byte[])">
-            <summary>
-            将 JSON 流反序列化为对象。
-            </summary>
-            <typeparam name="T">对象类型。</typeparam>
-            <param name="jsonData">要反序列化的 JSON 流。</param>
-            <returns>反序列化后的对象。</returns>
-        </member>
-        <member name="M:GameFramework.Utility.Json.ToObject(System.Type,System.Byte[])">
-            <summary>
-            将 JSON 字符串反序列化为对象。
-            </summary>
-            <param name="objectType">对象类型。</param>
-            <param name="jsonData">要反序列化的 JSON 流。</param>
             <returns>反序列化后的对象。</returns>
         </member>
         <member name="T:GameFramework.Utility.Json.IJsonHelper">
